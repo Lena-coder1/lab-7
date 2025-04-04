@@ -22,5 +22,12 @@ button.addEventListener("mouseup" ,function(){
     },1000);
 })
 
-//keyboard  event 
+//keyboard  event
+const output = document.getElementById("keyboardInfo"); 
+document.getElementById("keyInput").addEventListener('keydown', function(event) {
+   output.value =`last Key : ${event.key}`;
+   
+});
 
+
+//
