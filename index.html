@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- mouse event -->
+    <section id="mouse-event">
+        <button class="btn"  type="button"> click to view msg </button> 
+    </section>
+
+    <!-- keyboard event -->
+    <section id="keyboard-event">
+        <label>keyboard events: 
+        <input type = "text" onkeydown="keyboardEvent()">
+        <input type = "text" onkeypress="keyboardEvent()">
+        <input type = "text" onkeyup="keyboardEvent()">
+        </label>
+    </section>
+
+    <!--form event-->
+    <section id="form-event">
+        <form id ="Info" method="post" action="" >
+        
+            <div id="Name">
+                <label for="firstName">Full Name:
+                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                </label>
+           </div> 
+
+            <button type="submit" id="submit">Submit</button>
+           
+        </form>
+        </section>
+        
+    <!-- focus and blur events-->
+    <section id="focus-blur-event">
+        <form id="form">
+            <lable>message:
+            <input type=" text" id="message" placeholder="message">
+            </lable>
+        </form>
+    </section>
+
+    <!--event delegation-->
+    <section id="multi-btns">
+
+        <div id="btn1">
+        <button id="btns"> option 1 </button>
+            <div class="hidden">
+                <img src="loin.jpg" type="loin image">
+            </div>
+        </div>
+
+        <div id="btn2">
+        <button id="btns"> option 2 </button>
+            <div class="hidden">
+                <p>This is the last project for this semester !!</p>
+            </div>
+        </div>
+
+        <div id="btn3">
+            <button id="btns"> option 3 </button>
+                <div class="hidden">
+                    <p>almost there</p>
+                </div>
+        </div>
+
+        <div id="btn4">
+            <button id="btns"> option 4 </button>
+                <div class="hidden">
+                    <p>until next year &#128516; </p>
+                </div>
+        </div>
+      
+
+    </section>
+
+</body>
+</html>
