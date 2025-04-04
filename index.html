@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+
+    <title>Lab 7 Work</title>
 </head>
 <body>
+    <header>
+        <h1> LAB 7 WORK</h1>
+    </header>
+
     <!-- mouse event -->
-    <section id="mouse-event">
-        <button class="btn"  type="button"> click to view msg </button> 
+    <section id=" mouse-event">
+        <button id="btnEvent"  type="button"> click to view msg </button> 
     </section>
 
     <!-- keyboard event -->
     <section id="keyboard-event">
-        <label>keyboard events: 
-        <input type = "text" onkeydown="keyboardEvent()">
-        <input type = "text" onkeypress="keyboardEvent()">
-        <input type = "text" onkeyup="keyboardEvent()">
-        </label>
+        <label>keyboard events: </label> <br>
+        <input type = "text" onkeydown="keyboardEvent()" placeholder="keydown">
+        <input type = "text" onkeypress="keyboardEvent()" placeholder="keypress">
+        <input type = "text" onkeyup="keyboardEvent()" placeholder="keyup">
+        
     </section>
 
     <!--form event-->
@@ -25,59 +33,61 @@
         <form id ="Info" method="post" action="" >
         
             <div id="Name">
-                <label for="firstName">Full Name:
+                <label for="firstName">Full Name:</label><br>
+
                 <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
                 <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
-                </label>
+               
            </div> 
 
             <button type="submit" id="submit">Submit</button>
            
         </form>
-        </section>
-        
+    </section>
+
     <!-- focus and blur events-->
     <section id="focus-blur-event">
         <form id="form">
-            <lable>message:
+            <lable>message:</lable> <br>
             <input type=" text" id="message" placeholder="message">
-            </lable>
+           
         </form>
     </section>
 
     <!--event delegation-->
-    <section id="multi-btns">
+    <section id="event-delegation">
+        <div id="container">
 
-        <div id="btn1">
-        <button id="btns"> option 1 </button>
-            <div class="hidden">
-                <img src="loin.jpg" type="loin image">
-            </div>
-        </div>
-
-        <div id="btn2">
-        <button id="btns"> option 2 </button>
-            <div class="hidden">
-                <p>This is the last project for this semester !!</p>
-            </div>
-        </div>
-
-        <div id="btn3">
-            <button id="btns"> option 3 </button>
+            <div class="btn">
+            <button> option 1 </button>
                 <div class="hidden">
-                    <p>almost there</p>
+                    <img src="lion.jpg" type="lion image">
                 </div>
-        </div>
+            </div>
 
-        <div id="btn4">
-            <button id="btns"> option 4 </button>
+            <div class="btn">
+            <button> option 2 </button>
                 <div class="hidden">
-                    <p>until next year &#128516; </p>
+                    <p>This is the last project for this semester !!</p>
                 </div>
-        </div>
+            </div>
+
+            <div id="btn">
+                <button> option 3 </button>
+                    <div class="hidden">
+                        <p>almost there</p>
+                    </div>
+            </div>
+
+            <div id="btn">
+                <button> option 4 </button>
+                    <div class="hidden">
+                        <p>until next year &#128516; </p>
+                    </div>
+            </div>
       
 
+        </div>
     </section>
-
 </body>
 </html>
