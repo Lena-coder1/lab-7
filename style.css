@@ -51,6 +51,7 @@ input{
 .hidden {
     display: none;
     margin-top: 10px;
+    text-wrap: wrap;
 }
 
 img {

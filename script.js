@@ -71,4 +71,24 @@ input.addEventListener("blur",(event)=>{
     msg.textContent = " need to still fill this feild";
 })
 
-//
+//Event Delegation
+const buttons = document.getElementById("container");
+
+buttons.addEventListener('click',function(event){
+    if (event.target.tagName === 'BUTTON')
+    {
+       
+        const group = event.target.parentElement;
+        const hiddenContent=group.querySelector(".hidden");
+        event.target.style.backgroundColor = 'lightgreen';
+        
+        if (hiddenContent)
+        {
+            hiddenContent.style.display = 'block';
+        }
+       
+        
+    }
+   
+
+})
