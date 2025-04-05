@@ -55,3 +55,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
 })
+
+
+//focus events
+
+const input = document.getElementById("input");
+const msg = document.getElementById("message");
+input.addEventListener("focus", (event)=>{
+    event.target.style.background = "lightyellow";
+    msg.textContent =" on the input feild";
+});
+
+input.addEventListener("blur",(event)=>{
+    event.target.style.background = "darkgreen";
+    msg.textContent = " need to still fill this feild";
+})
+
+//
